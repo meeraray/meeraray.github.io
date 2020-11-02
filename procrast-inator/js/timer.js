@@ -81,6 +81,7 @@ function timer (seconds){ //counts time, takes seconds
 }
 function pauseTimer(event){
   if(isStarted === false){
+    
     timer(wholeTime);
     isStarted = true;
     this.classList.remove('play');

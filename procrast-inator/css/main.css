@@ -34,7 +34,7 @@ text-align: center;
     text-align:center;
 }
 
-.setters, .play {
+.setters, .controlls #pause {
     display:none;
 }
 

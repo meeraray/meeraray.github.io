@@ -12,6 +12,7 @@ function setColors(className, colorList) {
 function endTimer() {
     $("#timer").hide();
     $("#menu").show();
+    $("#alarmSound")[0].play();
 }
 
 $().ready(function(){
@@ -65,6 +66,7 @@ $().ready(function(){
     
     // set up timer when menu clicked
     $("#menu .btn").click(function() {
+      $("#alarmSound")[0].pause();
       if($(this).text() == "Break") { 
         if($(this).css("background-color") == $("#timer h1").css("color")) {
           console.log("break already pressed"); return;   
@@ -78,7 +80,7 @@ $().ready(function(){
       // move to timer    
       $("#menu").hide();
       $("#timer").show();
-      pauseTimer(); // starts timer
+      $("#pause").click(); // starts timer
     });
     
     // set timer color to class
