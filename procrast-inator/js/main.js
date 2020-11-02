@@ -12,6 +12,8 @@ function setColors(className, colorList) {
 function endTimer() {
     $("#timer").hide();
     $("#menu").show();
+    var alarm = $("#alarmSound")[0];
+    alarm.currentTime = 0;
     $("#alarmSound")[0].play();
 }
 
