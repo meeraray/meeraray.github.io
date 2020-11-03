@@ -14,11 +14,24 @@ function endTimer() {
     $("#menu").show();
     var alarm = $("#alarmSound")[0];
     alarm.currentTime = 0;
-    $("#alarmSound")[0].play();
+    playAlarm();
 }
 
+var alarmRepFn;
+function playAlarm() {
+    alarmRepFn = window.setInterval(function() {
+        console.log("starting");
+        $("#alarmSound")[0].play();
+    }, 100); //length of audio
+}
+function pauseAlarm() {
+    $("#alarmSound")[0].pause();
+    window.clearInterval(alarmRepFn);
+} 
+    
+
 $().ready(function(){
-    console.log("test");
+    //console.log("test");
     var catColors = ["#390099", "#9e0059", "#ff0054", "#ff5400", "#ffbd00"];
     setColors(".cat", catColors);
     setColors(".proc-form .input-group-text", catColors);
@@ -60,20 +73,30 @@ $().ready(function(){
     // bind submit button, enter key
     $("#start").click(setCatNames);
     $("#setup .form-control").keyup(function(event) {
-    if (event.which === 13) {
-      event.preventDefault();
-      setCatNames();
-    }
+        if (event.which === 13) {
+          event.preventDefault();
+          setCatNames();
+        }
   });
+    
+    //disable pause/play of alarm (F10 key)
+//    $("html").keyup(function(event) {
+//        if(event.which == 179) {
+//            console.log("prevented pause");
+//            //$("#alarmSound")[0].play();
+//            playAlarm();
+//        }
+//    })
     
     // set up timer when menu clicked
     $("#menu .btn").click(function() {
-      $("#alarmSound")[0].pause();
       if($(this).text() == "Break") { 
         if($(this).css("background-color") == $("#timer h1").css("color")) {
           console.log("break already pressed"); return;   
         }
       }
+//      $("#alarmSound")[0].pause();
+      pauseAlarm();
       var color = $(this).css("background-color");
       setTimer(color);
       $("#timer h1").css("color", color);    

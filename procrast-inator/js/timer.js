@@ -1,4 +1,6 @@
+//ROLL BACK TO 15 BEFORE PUSHING
 const TIME_MIN = 15;
+//const TIME_MIN = 1/60;
 
 //circle start
 let progressBar = document.querySelector('.e-c-progress');
