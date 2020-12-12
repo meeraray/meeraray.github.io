@@ -5,7 +5,7 @@ var catNames = [];
 function setColors(className, colorList) {
   $(className).each(function(ind) {
     $(this).css("background-color", colorList[ind]);
-    console.log(ind + " " + colorList[ind] + "\n");
+//    console.log(ind + " " + colorList[ind] + "\n");
   });
 }
 
@@ -20,7 +20,7 @@ function endTimer() {
 var alarmRepFn;
 function playAlarm() {
     alarmRepFn = window.setInterval(function() {
-        console.log("starting");
+//        console.log("starting");
         $("#alarmSound")[0].play();
     }, 100); //length of audio
 }
@@ -37,7 +37,7 @@ $().ready(function(){
     var catColors = ["#390099", "#9e0059", "#ff0054", "#ff5400", "#ffbd00"];
     setColors(".cat", catColors);
     setColors(".proc-form .input-group-text", catColors);
-    console.log(test);
+    //console.log(test);
     
     //$(".setters, .play").hide();
     setColors("#menu .cat", catColors);
@@ -53,7 +53,7 @@ $().ready(function(){
     }
           
     function setCatNames() {
-      console.log("submitted");
+      //console.log("submitted");
       // input validation
       if(!checkValid()) return false;
         

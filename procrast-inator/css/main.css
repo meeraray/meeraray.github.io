@@ -44,5 +44,11 @@ text-align: center;
 
 #break-lbl { 
   background-color: gray;
-    
+}
+
+#setup form {
+    margin-top:15px;
+}
+#start {
+    margin-top:15px;
 }
