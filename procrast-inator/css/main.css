@@ -41,3 +41,8 @@ text-align: center;
 #menu, #timer {
     display:none;
 }
+
+#break-lbl { 
+  background-color: gray;
+    
+}

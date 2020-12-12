@@ -31,6 +31,8 @@ function pauseAlarm() {
     
 
 $().ready(function(){
+    var classes = [];
+    
     //console.log("test");
     var catColors = ["#390099", "#9e0059", "#ff0054", "#ff5400", "#ffbd00"];
     setColors(".cat", catColors);
@@ -56,8 +58,8 @@ $().ready(function(){
       if(!checkValid()) return false;
         
       //add names to list
-      $("#setup .form-control").each(function(ind) {
-        catNames[ind] = $(this).val();               
+      $("#setup input.form-control").each(function(ind) {
+        catNames[ind] = $(this).val();  
       });
         
       // label menu buttons
@@ -65,6 +67,10 @@ $().ready(function(){
         $(this).text(catNames[ind]);               
       });
         
+      $("#setup select").each(function(ind) {
+        //console.log(parseInt($(this).find("option:selected").text()));
+        classes.push(parseInt($(this).find("option:selected").text()));
+      });
       // move to menu
       $("#setup").hide();
       $("#menu").show();
@@ -105,6 +111,7 @@ $().ready(function(){
       // move to timer    
       $("#menu").hide();
       $("#timer").show();
+      wholeTime = 60 * classes[$("#menu .btn").index(this)];
       $("#pause").click(); // starts timer
     });
     
