@@ -53,10 +53,11 @@ body {
 :root {
     --blank-color:#b3b3b3;
     --full-color:#cc002b;
+    --size: 30px;
 }
 .marker {
-    width:30px;
-    height:30px;
+    width:var(--size);
+    height:var(--size);
     margin-right:8px;
     margin-bottom:8px;
     display:inline-block;
