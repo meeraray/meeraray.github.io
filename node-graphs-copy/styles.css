@@ -1,0 +1,90 @@
+.control {
+    border:1px solid purple;
+    padding:5px;
+   margin-bottom:10px;
+    cursor: default;
+    user-select:none;
+}
+.control:hover {
+    background-color:#fae6ff;
+}
+.control span {
+    margin-left:5px;
+}
+.control.selected {
+    background-color:#f0b3ff;
+}
+.control.selected:hover {
+    background-color:#f0b3ff;
+}
+
+.node {
+    position:absolute;
+    display:table-cell;
+    background-color:lavender;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+/*    line-height:30px;*/
+    text-align:center;
+    vertical-align: middle;
+    cursor: default;
+    user-select:none;
+    z-index:2;
+}
+
+#stage {
+    height:600px;
+    padding-left:0px;
+    padding-right:0px;
+    border: 1px solid purple;
+    position:relative;
+}
+
+.container-fluid.custom {
+    margin: 50px 0px;
+}
+
+#sidebar {
+    padding:0px 15px;
+}
+#sidebar .inner {
+    border: 1px solid purple;
+    height:100%;
+    padding: 10px;
+}
+#message {
+    font-style: italic;
+}
+
+line {
+    stroke: black;
+    stroke-width:2;
+}
+#tempLine {
+    display:none;
+}
+.line {
+    height:2px;
+    background-color:purple;
+    position:absolute;
+    z-index:1;
+}
+
+#controlbar, #stage, #sidebar {
+    margin-bottom:15px;
+}
+#shortest-path-heading {
+    margin-top:50px;
+    font-weight: bold;
+}
+.on {
+/*    background-color:purple;*/
+    
+}
+.visiting {
+    border:2px solid purple;
+}
+.visited {
+    background-color: purple;
+}
