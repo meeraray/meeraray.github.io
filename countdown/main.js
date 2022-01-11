@@ -1,4 +1,7 @@
-var startDate = new Date("2020 march 7");
+// Old quarantine start date
+// var startDate = new Date("2020 march 7");
+var startDate = new Date("2021 december 15");
+
 var msDay = 1000 * 60 * 60 * 24;
 
 function DaysSince(props) {
@@ -6,7 +9,7 @@ function DaysSince(props) {
         "h1",
         null,
         Math.round((props.date - startDate) / msDay),
-        " days in quarantine."
+        " days since Fall Sem. Ended."
     );
 }
 

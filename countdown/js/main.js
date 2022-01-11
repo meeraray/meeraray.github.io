@@ -9,8 +9,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 // npx babel --watch src --out-dir js --presets react-app/prod
-var startDate = new Date("2020 march 7");
-var endDate = new Date("2021 august 30");
+var startDate = new Date("2021 december 15");
+var endDate = new Date("2022 may 15");
 var msDay = 1000 * 60 * 60 * 24;
 
 function dayDiff(start, end) {
@@ -37,7 +37,7 @@ function setCorrectSize() {
         setSize(s);
         s++;
     } while (!isOverflowing());
-
+    console.log(s)
     setSize(s - 2);
 }
 
@@ -46,14 +46,14 @@ function CountHeader(props) {
         "h1",
         null,
         dayDiff(startDate, props.date),
-        " days in quarantine \u2022 ",
+        " days since Fall Sem. ended \u2022 ",
         dayDiff(props.date, endDate),
-        " days left"
+        " days till Spring Sem. ends"
     );
 }
 
 //function Markers(props) {
-//    
+//
 //}
 
 var Markers = function (_React$Component) {
