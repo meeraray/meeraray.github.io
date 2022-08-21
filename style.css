@@ -5,7 +5,7 @@ body {
   width: 80%;
   padding-top: 20vh;
   height: 80vh;
-  overflow-y: clip;
+  /* overflow-y: clip; */
   font-size: 16px;
 } 
 
@@ -35,4 +35,18 @@ a {
   font-size: 15px;
   color: white;
   text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+a:hover {
+  color: #b7e200;
+}
+
+.links {
+  display: flex;
+  gap: 15px;
+}
+.links span {
+  font-size: 1.25em;
+  user-select: none;
 }
