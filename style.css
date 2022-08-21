@@ -6,10 +6,22 @@ body {
   padding-top: 20vh;
   height: 80vh;
   overflow-y: clip;
+  font-size: 16px;
 } 
+
+/* Adjust margins for smaller screens */
+@media screen and (max-width: 1050px) {
+  body {
+    width: 90%;
+    padding-top: 10vh;
+    padding-left: 5vw;
+  }
+}
+
 img {
   float: left;
   width: 50vw;
+  max-height: 80vh;
   shape-outside: circle();
 }
 p {
