@@ -1,5 +1,5 @@
-# [Node Graph Maker](https://meeraray.github.io/node-graphs/)
-_Javascript, Jquery, HTML/CSS, Bootstrap_
+# [Node Graph Maker](https://meeraray.github.io/node-graph-copy/)
+_Javascript, Jquery, HTML/CSS, Bootstrap_  
 As I was taking a discrete math course, I felt the disconnect between the static diagrams and the dynamic processes we were studying. We were on the topic of breadth-first and depth-first search between nodes of an undirected graph. While there are visualizations out there, they weren't adjustable enough to be helpful for me. Most didn't come with the automatic numbering of nodes that my course used by convention nor did they allow you to adjust the nodes' position. So, I created a dynamic web page that lets you create node graphs and see breadth-first search between any two nodes.
 
 
