@@ -5,7 +5,7 @@ As I was taking a discrete math course, I felt the disconnect between the static
 
 # [Countdown App](https://meeraray.github.io/countdown/)
 _React.js, HTML/CSS, and vanilla JavaScript_  
-Carnegie Mellon University is my second home, and I felt homesick for campus as I sat in quarantine. I made this front-end app to count down the days left until I could return, using an icon for each day to help visualize the passage of time. I used official campus branding guidelines for fonts and colors, and set the background to a photo of campus. Since CMU has moved back to on-campus learning for the most part, I've kept this up but changed the dates.
+Carnegie Mellon University is my second home, and I felt homesick for campus as I sat in quarantine. I made this front-end app to count down the days left until I could return, using an specially scaled icon for each day to help visualize the passage of time. I used official campus branding guidelines for fonts and colors, and set the background to a photo of campus. Since CMU has resumed on-campus instruction, I've kept this up but changed the dates to show my progress towards graduation.
 
 
 # [Procrast-inator](https://meeraray.github.io/procrast-inator/)
