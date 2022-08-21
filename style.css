@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  width: 80%;
+  padding-top: 20vh;
+  height: 80vh;
+  overflow-y: clip;
+} 
+img {
+  float: left;
+  width: 50vw;
+  shape-outside: circle();
+}
+p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 2;
+}
+
+a {
+  /* text-decoration: none; */
+  font-family: monospace;
+  font-size: 15px;
+  color: white;
+  text-decoration: underline;
+}
