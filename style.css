@@ -1,17 +1,22 @@
+#index {
+  padding-top: 20vh;
+  height: 80vh;
+  padding-left: 0vw;
+}
 body {
   margin: 0;
   background-color: black;
   color: white;
   width: 80%;
-  padding-top: 20vh;
-  height: 80vh;
+  padding-top: 10vh;
   /* overflow-y: clip; */
   font-size: 16px;
+  padding-left: 10vw;
 } 
 
 /* Adjust margins for smaller screens */
 @media screen and (max-width: 1050px) {
-  body {
+  #index {
     width: 90%;
     padding-top: 10vh;
     padding-left: 5vw;
@@ -46,7 +51,12 @@ a:hover {
   display: flex;
   gap: 15px;
 }
+
 .links span {
   font-size: 1.25em;
   user-select: none;
+}
+
+h1 {
+  font-family: monospace;
 }
